@@ -6,7 +6,7 @@ const getAllUserSubmissions = async (handle) => {
         return { error: response.comment }
     }
     const body = await response.json();
-    if (body.status != 'OK') {
+    if (body.status !== 'OK') {
         return { error: "Some error occured" }
     }
     if (body.result == null) {
@@ -35,7 +35,6 @@ const filterSubmissions = (submissions, tags) => {
 }
 
 const filterFunc = (list) => {
-    const map = new Map();
     const solvedSet = new Set();
     const unsolvedSet = new Set();
 
@@ -83,7 +82,7 @@ const getList = (listA, listB, friendSolved, friendNotSolved) => {
 }
 
 
-const getLists = async (handle, friendHandle, tags) => {
+export const getLists = async (handle, friendHandle, tags) => {
     const userSubmissions = await getAllUserSubmissions(handle);
     if (userSubmissions.error) {
         return { error: userSubmissions.error }
@@ -104,6 +103,3 @@ const getLists = async (handle, friendHandle, tags) => {
     }
 }
 
-
-
-module.exports = getLists

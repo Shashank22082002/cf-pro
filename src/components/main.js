@@ -1,6 +1,6 @@
 import Multiselect from 'multiselect-react-dropdown';
 import { useState } from 'react';
-import getLists from './script';
+import { getLists } from './script';
 import {Table} from './table.js'
 export const Form = () => {
     const [handle, setHandle] = useState('');
