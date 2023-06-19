@@ -2,37 +2,138 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  /* border-left: 3px solid grey; */
+  border-bottom: 3px solid rgb(196, 196, 196);
+  margin: 1em;
+  padding: 1em;
+  text-align: left;
+  font-family: 'Balthazar', serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:flex-start;
+}
+
+
+.cf-logo{
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.heading {
+  margin: auto 1em;
+  font-size: 2em;
+}
+
+
+
+.form{
+  width: 100%;
+  height: 60%;
+  /* margin: 2em auto; */
+  /* border: 1px solid black; */
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom-margin{
+  margin-bottom: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.left{
+  /* write css to align this div in flex to left*/
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid black; */
+  /* margin-right: 20px; */
+}
+
+.right{
+  /* write css to align this div in flex to right*/
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.table-box{
+
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  font-family: 'Balthazar', serif;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  font-size: 1.05em; 
+  /* background-color: #04aa6d; */
+  /* color: white; */
+}
+
+
+table td {
+  font-size: 1em;
+  text-align: left;
+}
+
+.multi-select-styling{
+  width: 10em !important;
+  height: 2em;
+  margin: 1em;
+  font-family: 'Balthazar', serif;
+}
+
+
+
+
+.inputs{
+  margin-top: 2em;
+  align-self: flex-start;
+}
+
+input {
+  font-family: 'Balthazar', serif;
+  font-style: normal;
+  font-weight: 500;
+  border: 1px solid grey;
+  font-size: 1em;
+}
+
+.input-box{
+  height: 2em;
+  width: 10em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.sub-button{
+  width: 5em;
+  height: 3em;
+  margin: 90px auto;
+  margin-right: 10%;
+  justify-content: flex-end;
 }
