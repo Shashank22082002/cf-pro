@@ -103,8 +103,6 @@ table td {
 }
 
 
-
-
 .inputs{
   margin-top: 2em;
   align-self: flex-start;
@@ -135,9 +133,11 @@ input {
 }
 
 .sub-button{
-  width: 5em;
-  height: 3em;
-  margin: 90px auto;
+  width: 8em;
+  height: 2em;
+  margin: 3em auto;
+  font-size: 0.8em;
+  font: verdana,arial,sans-serif;
   margin-right: 10%;
   justify-content: flex-end;
 }
