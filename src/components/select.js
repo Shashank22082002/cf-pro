@@ -5,11 +5,11 @@ export const Select = () => {
             isObject={false}
             onKeyPressFn={function noRefCheck() { }}
             onRemove={(event) => {
-                console.log(event)
+                // console.log(event)
             }}
             onSearch={function noRefCheck() { }}
             onSelect={(event) => {
-                console.log(event)
+                // console.log(event)
             }}
             placeholder="TAGS"
             options={[

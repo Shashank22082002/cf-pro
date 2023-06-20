@@ -31,7 +31,7 @@ const COLUMNS = [
 ];
 
 export const Table = (props) => {
-    console.log('Props table', props)
+    // console.log('Props table', props)
     const [data, setData] = useState([]);
     const columns = useMemo(() => COLUMNS, []);
 

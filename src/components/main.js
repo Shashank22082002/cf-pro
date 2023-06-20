@@ -24,6 +24,10 @@ export const Form = () => {
 
 
     const ModifyList = (list) => {
+        // sort list on basis of rating
+        list.sort((a, b) => {
+            return a.rating - b.rating;
+        })
         const modifiedList = list.map((item, index) => {
             const newItem = { '#': index + 1, 'name': item.name, 'tags': separateTags(item.tags), 'rating': item.rating, link: `https://codeforces.com/problemset/problem/${item.contestId}/${item.index}`};
             return newItem;
@@ -31,7 +35,7 @@ export const Form = () => {
         return modifiedList;
     }
     const onSubmit = () => {
-        console.log(handle, friendHandle, tags)
+        // console.log(handle, friendHandle, tags)
         getLists(handle, friendHandle, tags).then((res) => {
             if (res.error) {
                 setActive(0);
@@ -46,6 +50,9 @@ export const Form = () => {
     }
     return (
         <div className='main-body'>
+            <div className="display-text">
+                Want to know problems your friend has solved but you haven't....?
+            </div>
         <div className="form">
             <div className="left">
                 <div className="inputs">

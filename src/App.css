@@ -58,11 +58,6 @@
   /* border: 1px solid black; */
 }
 
-.table-box{
-
-  /* margin-left: 2rem;
-  margin-right: 2rem; */
-}
 
 table {
   border-collapse: collapse;
@@ -121,6 +116,15 @@ input {
   font-weight: 500;
   border: 1px solid grey;
   font-size: 1em;
+}
+
+.display-text{
+  font-family: 'Balthazar', serif;
+  font-style: italic;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin: 1em;
 }
 
 .input-box{

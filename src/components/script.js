@@ -12,7 +12,7 @@ const getAllUserSubmissions = async (handle) => {
     if (body.result == null) {
         return { error: "Some error occured" }
     }
-    console.log(handle, body.result)
+    // console.log(handle, body.result)
     return body.result;
 }
 
@@ -30,7 +30,7 @@ const filterSubmissions = (submissions, tags) => {
         }
         return found;
     })
-    console.log(probs)
+    // console.log(probs)
     return probs;
 }
 
